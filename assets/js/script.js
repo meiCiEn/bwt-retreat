@@ -61,7 +61,7 @@ function closeNav() {
 
   const sections = document.querySelectorAll("section");
   const navLi = document.querySelectorAll("nav.desktop > a");
-  const lineUp = document.querySelectorAll(".lineUp");
+  // const lineUp = document.querySelectorAll(".lineUp");
   window.onscroll = () => {
     let current = "";
   
@@ -81,18 +81,20 @@ function closeNav() {
   };
 
 
-  // Animation on scroll into view
-// Create the observer
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const lineUp = entry.target.querySelector('.lineUp');
-    if (entry.isIntersecting) {
-      lineUp.classList.add('lineUp-top');
-      return; // if we added the class, exit the function
-    }
-    // We're not intersecting, so remove the class!
-    lineUp.classList.remove('lineUp-top');
-  });
-});
-// Tell the observer which elements to track
-observer.observe(document.querySelector('.observe'));
+
+  
+//   // Animation on scroll into view
+// // Create the observer
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     const lineUp = entry.target.querySelector('.lineUp');
+//     if (entry.isIntersecting) {
+//       lineUp.classList.add('lineUp-top');
+//       return; // if we added the class, exit the function
+//     }
+//     // We're not intersecting, so remove the class!
+//     lineUp.classList.remove('lineUp-top');
+//   });
+// });
+// // Tell the observer which elements to track
+// observer.observe(document.querySelector('.observe'));
