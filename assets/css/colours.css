@@ -1,0 +1,102 @@
+:root{
+    --black:#111111;
+    --white:#ffffff;
+    --pinkBeige: #eddcd9;
+    --pinkWhite: #f2ebe9;
+    --fuschia: #de5499;
+    --greenBlack: #264143;
+    --darkGreenBlack: #133034;
+    --apricot: #e99f4c;
+    --blue: #00CCFF;
+    --overlay: rgba(84, 84, 84, 0.2);
+
+}
+
+.polka {
+    background-image: 
+      radial-gradient(rgb(237, 220, 217) 28%, transparent 28%),
+      radial-gradient(rgb(237, 220, 217) 28%, transparent 28%);
+    background-position: 0px 0px, 20px 20px;
+    background-size: 40px 40px;
+    background-color: rgb(242, 235, 233);
+  }
+  
+.black-bg {
+    background-color: var(--black);
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.pinkBeige-bg {
+    background-color: var(--pinkBeige);
+}
+
+.pinkWhite-bg {
+    background-color: var(--pinkWhite);
+}
+
+.fuschia-bg {
+    background-color: var(--fuschia);
+}
+
+.greenBlack-bg {
+    background-color: var(--greenBlack);
+}
+
+.darkGreenBlack-bg {
+    background-color: var(--darkGreenBlack);
+}
+
+.apricot-bg {
+    background-color: var(--apricot);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+
+.overlay {
+    background-color: var(--overlay);
+}
+
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+.red {
+    color: red;
+}
+
+.pinkBeige {
+    color: var(--pinkBeige);
+}
+
+.pinkWhite {
+    color: var(--pinkWhite);
+}
+
+.fuschia {
+    color: var(--fuschia);
+}
+.greenBlack {
+    color: var(--greenBlack);
+}
+
+.darkGreenBlack {
+    color: var(--darkGreenBlack);
+}
+
+.apricot {
+    color: var(--apricot);
+}
+
+.blue {
+    color: var(--blue);
+}
+

@@ -1,0 +1,624 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px; 
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    color: var(--darkGreenBlack);
+    /* = 100% viewport height = l'hauteur de la fenêtre d'affichage */
+}
+
+header,
+footer,
+div,
+nav,
+section,
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.desktop {
+    display: none;
+}
+    
+/* TITLES AND FONTS */
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: 'Rammetto One', cursive;
+    /* text-transform: uppercase; */
+    color: var(--white);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+/* TEXT ANIMATION */
+
+.lineUp-top {
+    animation: 2s anim-lineUp-top ease-out;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes anim-lineUp-top { 
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.lineUp-bottom {
+    animation: 3s anim-lineUp-bottom ease-out;
+}
+
+@keyframes anim-lineUp-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+
+.lineUp-left {
+    animation: 2.5s anim-lineUp-left ease-out;
+}
+
+@keyframes anim-lineUp-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.lineUp-right {
+    animation: 2.5s anim-lineUp-right ease-out;
+}
+
+@keyframes anim-lineUp-right {
+    0% {
+        opacity: 0;
+        transform: translateX(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* LINKS */
+
+.top {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.top:hover, .top:active {
+    opacity: 80%;
+}
+
+/* PADDING AND BORDERS */
+
+.round-borders {
+    border-radius: 5px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.margin-tb-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-tb-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    align-self: center;
+}
+
+/* CONTAINER */
+
+.parent1.container {
+    top: 80px;
+    width: 100%;
+}
+
+/* HEADER */
+
+header.parent2 {
+    flex-direction: row;
+    background-color: var(--pinkWhite);
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.parent3.inner-header {
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parent4.logo-wrapper {
+    width: 160px;
+    height: auto;
+}
+
+.parent4.menu-wrapper {
+    width: 22px;
+    height: 22px;
+    align-items: center;
+}
+
+/* SIDENAV */
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 80px; /* Stay at the top */
+    left: 0;
+    background-color: var(--darkGreenBlack);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
+    transition: 0.5s;
+ } /* 0.5 second transition effect to slide in the sidenav */
+
+  
+  /* The navigation menu links // */
+  .sidenav a {
+    padding: 15px 32px 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--pinkWhite); 
+    display: block;
+    transition-delay: 0.2s;
+    transition: 0.3s;
+    display: inline-block;
+    position: relative;
+  }
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover:not(.closebtn), .sidenav a:active:not(.closebtn){
+    color: var(--fuschia);
+    background-color: var(--greenBlack);
+    border-top: solid 2px var(--fuschia);
+    border-bottom: solid 2px var(--fuschia);
+  }
+
+
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 55px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* underline  animation  on hover / click */
+/*   
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--fuschia);
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: (--fuschia);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after, .hover-underline-animation:active:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+
+
+/* nav.parent2.sidenav {
+    margin-top: 80px;
+} */
+
+/* MAIN */
+
+main.parent2 {
+    margin-top: 80px;
+}
+
+/* SECTION 1 */
+
+.section1 {
+    background-color: var(--pinkBeige);
+}
+
+.parent4.hero-image-wrapper {
+    width: 100%;
+    height: 350px;
+    background-image: url(/assets/images/Photos/Drongen-Abbey_wfttkq/Drongen-Abbey_wfttkq_c_scale\,w_528.jpg);
+    background-size: cover;
+    background-position-y: 45%;
+}
+
+.child4.hero-image-overlay {
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px;
+    background-color: var(--overlay);
+}
+
+.parent4.hero-title-container {
+    position: relative;
+    margin-top: -180px;
+    margin-left: 15px;
+    flex-basis: fit-content;
+    padding-right: 35vw;
+    align-self: center;
+}
+
+.child4.hero-rectangle {
+    height: 527px;
+    width: 250px;
+    position: relative;
+    background: linear-gradient(330deg, var(--blue) 45%, var(--apricot) 45% 60%, var(--fuschia) 60%);
+}
+
+.parent5.hero-title-wrapper {
+    justify-content: space-evenly;
+    height: calc(300px + (7vw));
+    width: calc(100% - (25vw));
+    padding: 30px;
+    position: absolute;
+    background-color: var(--greenBlack);
+    top: 60px;
+    left: 30px;
+}
+
+.hero-title-wrapper h2 {
+    color: var(--white);
+
+}
+
+.child5.hero-title {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.hero-title-wrapper h2.hero-subtitle {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.hero-title-wrapper h2.hero-date {
+    font-weight: 300;
+    text-transform: none;
+    margin: 0;
+}
+
+/* SECTION 2 */
+
+.parent3.section2 {
+    width: 100%;
+    background-color: var(--pinkBeige);
+    align-content: center;
+}
+
+.parent4.s2-text-wrapper {
+    background-color: var(--white);
+    width: calc(250px + (10vw));
+    box-shadow: 4px 5px 15px 2px rgb(0 0 0 / 30%);
+    margin-top: -80px;
+    margin-bottom: 50px;
+    margin-left: calc(20px + (7vw));
+    margin-right: 85px;
+    z-index: 9;
+}
+
+.parent5.icon-wrapper {
+    height: 90px;
+    width: 90px;
+}
+
+/* READ MORE BUTTON */
+
+#more {
+    display: none;
+}
+
+.btn-more {
+    background-color: var(--white);
+    color: var(--greenBlack);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid var(--blue);
+}
+
+.btn-more:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* SECTION 3 */
+
+.parent3.section3 {
+    background: linear-gradient(160deg, var(--greenBlack) 20%, var(--blue) 20% 50%, var(--fuschia) 50% 60%, var(--greenBlack) 60% 80%, var(--apricot) 80% 85%, var(--greenBlack) 85%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.parent4.practical-info {
+    margin: 20px;
+    background-color: var(--white);
+    color: var(--darkGreenBlack);
+}
+
+p.deadline {
+    padding: 10px;
+}
+
+p.deadline>strong {
+    display: flex;
+    flex-direction: column;
+}
+
+p.deadline>strong>* {
+    display: flex;
+}
+
+button.book {
+    color: white;
+    width: 170px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5rem;
+    box-shadow: 4px 4px 15px 2px rgb(0 0 0 / 30%);
+}
+
+button.book:hover, button.book:active {
+    background-color: var(--greenBlack);
+}
+
+button.book:active {
+    opacity: 80%;
+    box-shadow: 3px 3px 10px 2px rgb(0 0 0 / 60%);
+}
+
+/* SECTION 4 */
+.parent3.section4 {
+    background-color: var(--white);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.parent4.s4-wrapper-1 {
+    position: relative;
+    flex-basis: fit-content;
+    padding-right: 35vw;
+    align-self: center;
+}
+
+.child4.s4-image-wrapper {
+    position: relative;
+}
+
+.child4.circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+
+.child4.s4-image-wrapper {
+    flex-direction: row;
+    width: 200px;
+    height: 200px;
+}
+
+.child4.s4-image-wrapper img {
+    object-fit: cover;
+}
+
+.parent4.s4-wrapper-2 {
+
+    position: relative;
+    align-self: center;
+    margin-left: calc(20px + (7vw));
+    margin-top: -20px;
+
+}
+
+.parent5.s4-text-wrapper {
+    width: calc(250px + (10vw));
+    box-shadow: 4px 5px 15px 2px rgb(0 0 0 / 30%);
+    position: relative;
+    background-color: var(--pinkBeige);
+    z-index: 8;
+}
+
+.child4.circle2 {
+    width: 130px;
+    height: 130px;
+    background: repeating-linear-gradient(45deg,
+            var(--fuschia),
+            var(--fuschia) 10px,
+            var(--greenBlack) 10px,
+            var(--greenBlack) 20px);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -70px;
+    left: -70px;
+    z-index: 7;
+}
+
+/* SECTION 5 */
+
+.s5-wrapper {
+    flex-direction: column;
+}
+
+.s6-image-wrapper {
+    height: 100%;
+}
+
+/* SECTION 6 */
+
+.section6 {
+    color: var(--white);
+}
+
+/* FOOTER */
+
+footer {
+    border-top: solid 5px var(--fuschia);
+    align-content:  center;
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+}
+
+.logo-wrapper-2 {
+    width: 180px;
+    height: auto;
+}
+
+.attribution {
+    padding: none;
+    margin: none;
+}
+/* NOTES */
+
+/* Make use of align self, which aligns  *individual children* to the parent. */

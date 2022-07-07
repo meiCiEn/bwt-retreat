@@ -1,0 +1,540 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.9rem;
+        ;
+    }
+
+    /* SIDENAV */
+    .sidenav a {
+        padding: 20px 32px 20px 32px;
+        font-size: 25px;
+    }
+    
+
+    /* SECTION 1 */
+
+
+    .child4.hero-rectangle {
+        height: 570px;
+        width: 300px;
+    }
+
+    .parent5.hero-title-wrapper {
+        width: calc(100% - (18vw));
+        height: calc(300px + (10vw));
+        top: 60px;
+    }
+
+    .parent4.hero-image-wrapper {
+        height: 560px;
+        background-position-y: 30%;
+        background-image: url(/assets/images/Photos/Drongen-Abbey_wfttkq/Drongen-Abbey_wfttkq_c_scale\,w_1084.jpg);
+    }
+
+    /* SECTION 2 */
+
+    .parent3.section2 {
+        align-content: flex-end;
+    }
+
+    .parent4.child3.s2-text-wrapper {
+        width: calc(250px + (25vw));
+        margin-top: -70px;
+    }
+
+    /* SECTION 3 */
+
+    aside {
+        width: 80%;
+        align-self: center;
+    }
+
+    p.deadline {
+        width: 260px;
+        align-self: flex-start;
+        background-color: var(--white);
+    }
+
+    p.deadline>strong {
+        width: 55%;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    p.deadline>strong>* {
+        display: flex;
+    }
+
+    button.book {
+        width: 350px;
+        padding: 20px;
+        font-size: 1.7rem;
+    }
+
+    /* SECTION 4 */
+
+    .parent5.s4-text-wrapper {
+        width: calc(250px + (25vw));
+    }
+
+        /* SECTION 6 */
+
+    .s6-image-wrapper {
+        height: 380px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    /* SECTION 1 */
+
+    .parent4.hero-title-container {
+        margin-left: 0;
+        margin-top: -370px;
+    }
+
+    .parent5.hero-title-wrapper {
+        width: calc(100% - (30vw));
+        height: calc(300px + (10vw));
+        top: 60px;
+        left: 50px;
+    }
+
+    .child4.hero-rectangle {
+        height: 630px;
+        width: 400px;
+    }
+
+    /* SECTION 2 */
+
+    .parent4.child3.s2-text-wrapper {
+        width: calc(250px + (30vw));
+        margin-top: -100px;
+    }
+
+    .parent5.icon-wrapper {
+        height: 120px;
+        width: 120px;
+    }
+
+    .parent4.hero-image-wrapper {
+        height: 600px;
+        background-position-y: 40%;
+    }
+}
+
+/* SECTION 6 */
+
+.s6-image-wrapper>img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+    .desktop {
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* HEADER */
+
+    header.parent2 {
+        height: 100px;
+    }
+
+    .parent3.inner-header {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .navbar {
+        flex-direction:row;
+        width: 550px;
+        justify-content: space-between;
+    }
+
+    .navbar > a {
+        display: flex;
+        color: var(--fuschia);
+
+    }
+
+    .navbar > a:hover, .navbar > a:active {
+        display: flex;
+        color: var(--greenBlack);
+        font-weight: 600;
+    }
+
+    .navbar > a.active {
+        display: flex;
+        color: var(--greenBlack);
+        font-weight: 600;
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+      }
+
+      .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--fuschia);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      .hover-underline-animation:hover:after, .hover-underline-animation:active:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+    /* SECTION 1 */
+
+    /* header {
+            position:static;
+        } */
+
+    main.parent2 {
+            margin-top: 100px;
+        }
+
+    .section1 {
+        flex-direction: row;
+        padding-top: 40px;
+        padding-bottom: 150px;
+        padding-left: 120px;
+        padding-right: 150px;
+    }
+
+    .parent4.hero-image-wrapper {
+        position: static;
+        width: 60%;
+        height: 500px;
+        border-radius: 5px;
+        z-index: 2;
+        background-image: url(/assets/images/Photos/Drongen-Abbey_wfttkq/Drongen-Abbey_wfttkq_c_scale\,w_1400.jpg);
+    }
+
+    .parent4.hero-title-container {
+        width: 40%;
+        position: static;
+        margin: 0;
+        padding: 0;
+        align-self: auto;
+        flex-basis: auto;
+    }
+
+    .parent5.hero-title-wrapper {
+        width: 40%;
+        position: absolute;
+        top: 270px;
+        left: 50vw;
+        z-index: 3;
+        padding: 3vw;
+        border-bottom: 10px solid var(--blue);
+
+    }
+
+    .child4.hero-rectangle {
+        position: absolute;
+        width: 47vw;
+        top: 190px;
+        left: 420px;
+        height: calc(350px + (15vw));
+        z-index: 0;
+        background: var(--fuschia);
+        z-index: 1;
+    }
+
+    /* SECTION  2 */
+    .parent3.section2 {
+        background-color: var(--pinkWhite);
+        margin-top: 0;
+    }
+
+    .parent4.child3.s2-text-wrapper {
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 100px 5vw;
+        gap: 50px;
+        justify-content: space-between;
+        height: fit-content;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .new1 {
+        flex-basis: 400px;
+        flex-grow: 6;
+    }
+
+    .new2 {
+        flex-basis: 400px;
+        flex-grow: 1;
+    }
+
+    p.child4.s2-text.desktop {
+        display: block;
+    }
+
+
+    figure.child4 {
+        width: 100%;
+    }
+
+    figcaption {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+
+    /* SECTION 3 */
+
+    .parent4.practical-info {
+        gap: 20px;
+        height: 1750px;
+        background-color: transparent;
+        padding: 100px 5vw;
+        margin: 0;
+        width: 100%;
+        align-content: space-around;
+    }
+
+    .practical-info>article {
+        width: calc(200px + 20vw);
+        background: var(--white);
+        padding: 30px;
+    }
+
+
+    /* SECTION 4 */
+
+    .parent3.section4 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-around;
+        padding: 100px 5vw;
+        gap: 20px;
+    }
+
+    .parent4.s4-wrapper-1 {
+        flex-basis: 350px;
+        flex-grow: 0;
+        margin: 0 0 0 5vw;
+        padding: 0;
+        align-self: auto;
+        justify-content: center;
+    }
+
+    .child4.circle1 {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        position: absolute;
+        left: 300px;
+        top: calc(170px - 12vw);
+    }
+
+    .child4.circle2 {
+        width: 200px;
+        height: 200px;
+        bottom: -100px;
+    }
+
+    .child4.s4-image-wrapper {
+        width: 100%;
+        height: auto;
+        align-items: center
+    }
+
+    .parent4.s4-wrapper-2 {
+        flex-basis: 420px;
+        flex-grow: 1;
+        margin: 0 0 0 5vw;
+        padding: 0;
+        align-self: auto;
+    }
+
+    .parent5.s4-text-wrapper {
+        width: 100%;
+    }
+
+
+    /* SECTION 5 */
+    .section5 {
+        flex-direction: row;
+        height: 650px;
+        justify-content: center;
+    }
+
+    .s5-wrapper {
+        width: 50%;
+        padding: 100px 60px;
+    }
+
+    .s6-image-wrapper {
+        width: 50%;
+        height: 100%;
+    }
+
+    .section5 div img {
+        max-width: 100%;
+        object-fit: cover;
+        min-height: 100%;
+    }
+
+    /* SECTION 6 */
+
+    .section6 {
+        padding: 80px 5vw;
+    }
+
+    .s6-text-wrapper {
+        padding: 0px !important;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    body {
+        width: 1200px;
+        margin: auto;
+    }
+
+    header.parent2 {
+        width: 1200px;
+    }
+
+    .parent4.hero-image-wrapper {
+        width: 558px
+    }
+    
+    .parent5.hero-title-wrapper {
+        width: 500px;
+        height: 420px;
+        padding: 45px 50px;
+    }
+
+    .parent4.hero-title-container {
+        width: 370px;
+    }
+    
+    h1.child5.hero-title {
+        font-size: 48px;
+    }
+
+    h2.hero-subtitle, h2.hero-date {
+        font-size: 1.6rem;
+    }
+
+    .child4.hero-rectangle {
+        width: 400px;
+        height: 550px;
+        left: 45vw;
+        top: 170px;
+    }
+
+
+    .parent4.practical-info {
+        gap: 40px;
+        padding: 100px 130px 0 130px;
+    }
+
+    .practical-info>article {
+        width: 500px;
+    }
+
+    .parent4.s4-wrapper-1 {
+        margin: 0;
+    }
+
+    .parent5.s4-text-wrapper {
+        padding: 40px;
+    }
+
+    .child4.circle2 {
+        left: 500px;
+    }
+
+    .parent4.child3.s2-text-wrapper {
+        gap: 80px;
+    }
+
+    .parent3.section3 {
+        padding-bottom: 0;
+    }
+
+    .child4.circle1 {
+        width: 150px;
+        height: 150px;
+        left: 285px;
+        top: 20px;
+    }
+
+    .section5 {
+        flex-direction: row;
+        height: 600px;
+    }
+
+    .s5-wrapper {
+        justify-content: center;
+    }
+
+    footer p {
+        width: 650px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    body {
+        width: 1400px;
+        margin: auto;
+    }
+
+    header.parent2 {
+        width: 1400px;
+    }
+
+    .section1 {
+        padding-left: 180px;
+    padding-right: 180px;
+    }
+
+    .child4.circle1 {
+        left: 270px;
+        top: -10px;
+    }
+
+    .child4.circle2 {
+        left: 650px;
+}
+.s5-wrapper {
+    width: 50%;
+    padding: 80px;
+}
+
+.s6-image-wrapper {
+    width: 50%;
+}
+}
